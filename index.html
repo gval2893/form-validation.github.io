@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <div class="container">
+      <form>
+        <div class="inputRow">
+          <div class="inputInfo">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name..."
+            />
+            <div id="fnameValidationMessage"></div>
+          </div>
+          <div class="inputInfo">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name..."
+            />
+            <div id="lnameValidationMessage"></div>
+          </div>
+        </div>
+        <div class="inputRow">
+          <div class="inputInfo">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email..."
+            />
+            <div id="emailValidationMessage"></div>
+          </div>
+          <div class="inputInfo">
+            <label for="phnumb">Phone number</label>
+            <input
+              type="text"
+              id="phnumb"
+              name="phonenumber"
+              placeholder="Your phone number..."
+            />
+            <div id="phnumbValidationMessage"></div>
+          </div>
+        </div>
+        <!--<span class="fi fi-au"></span>-->
+        <div class="inputRow">
+          <div class="w100">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="select">-- Select your country --</option>
+              <option value="moldova">Moldova</option>
+              <option value="ucraine">Ucraine</option>
+              <option value="romania">Romania</option>
+            </select>
+            <div id="countryValidationMessage">
+              --This field is optional--
+            </div>
+          </div>
+        </div>
+
+        <div class="w100">
+          <label for="address">Address</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Your address..."
+          />
+          <div id="addressValidationMessage">
+            --This field is optional--
+          </div>
+
+        </div>
+
+        <div class="w100">
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+        </div>
+
+        <div class="w100" id="buttonDiv">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
